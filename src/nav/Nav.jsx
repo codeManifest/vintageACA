@@ -22,9 +22,9 @@ export default function Nav() {
                       </NavLink>
                     ))}
                     
-        <Button Btn="SignUp"/>
 
     </nav>
+        <Button Btn="SignUp"/>
 
 </header>
 

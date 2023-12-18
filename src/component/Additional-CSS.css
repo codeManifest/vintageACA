@@ -1,13 +1,54 @@
-.sm-card-bg:first-child{
+.smallcard-bg:first-child{
     background: #FA6C9C;
     margin: 0;
 }
-.sm-card-bg:nth-child(2){
+.smallcard-bg:nth-child(2){
     background: #EE64E4;
 
     
 }
-.sm-card-bg:nth-child(3){
+.smallcard-bg:nth-child(3){
     background: #EEAF32;
 
+}
+
+.anim-cir1{
+    animation: one 5s 1s infinite alternate-reverse linear;
+}
+
+.anim-cir2{
+    animation: two 4s infinite 2s infinite alternate-reverse linear;
+}
+.anim-cir3{
+    animation: three 3s infinite 3s infinite reverse linear;
+}
+@keyframes one {
+    to{
+
+    }
+    from{
+        transform: scale(1.1);
+
+    }
+    
+}
+@keyframes two {
+    to{
+
+    }
+    from{
+        transform: scale(1.1);
+
+    }
+    
+}
+@keyframes three {
+    to{
+
+    }
+    from{
+        transform: scale(1.1);
+
+    }
+    
 }
