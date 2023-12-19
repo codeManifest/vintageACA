@@ -1,3 +1,4 @@
+import React from "react"
 
 import allData from "../DataArry"
 import Button from "../component/Button"
@@ -6,8 +7,13 @@ import { motion, spring } from "framer-motion"
 import woman from '../img/woman.png'
 import '../component/Additional-CSS.css'
 import Achivement from "../component/Achivement"
+import CountUp from 'react-countup';
+
 
 export default function homepage() {
+    
+    
+    
 
     return (
         <>
@@ -23,11 +29,11 @@ export default function homepage() {
 
                         <Button Btn="Contact" />
                         <div className=" ">
-                            <h1 className="text-4xl text-[#454545] ">50+</h1>
+                            <h1 className="text-4xl text-[#454545] "> <CountUp start={0} end={50} duration={2} delay={1}/>+</h1>
                             <p className="font-light">Courses</p>
                         </div>
                         <div className="" >
-                            <h1 className="text-4xl text-[#454545] ">20k+</h1>
+                            <h1 className="text-4xl text-[#454545] "> <CountUp start={0} end={20} duration={2} delay={1}/>k+</h1>
                             <p className="font-light">Students</p>
                         </div>
 
@@ -35,14 +41,14 @@ export default function homepage() {
                 </div>
                 <div className="w-1/2 relative   " >
 
-                    <motion.div animate={{ scale: 1.1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .12 }} className="h-[584px] w-[584px] bg-[#FAD9F8]  rounded-[50%] flex items-center justify-center">
+                    <motion.div initial={{ opacity: 0 }}   animate={{ scale: 1.1, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .12 }} className="h-[584px] w-[584px] bg-[#FAD9F8]  rounded-[50%] flex items-center justify-center">
 
-                        <motion.div animate={{ scale: .8 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[490px] w-[490px] bg-[#F9A7F3]  rounded-[50%] flex items-center justify-center">
+                        <motion.div initial={{ opacity: 0 }} animate={{ scale: .8, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[490px] w-[490px] bg-[#F9A7F3]  rounded-[50%] flex items-center justify-center">
 
-                            <motion.div animate={{ scale: .6 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[372px] w-[372px] bg-[#EE64E4]  rounded-[50%]  "></motion.div>
+                            <motion.div initial={{ opacity: 0 }} animate={{ scale: .6, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[372px] w-[372px] bg-[#EE64E4]  rounded-[50%]  "></motion.div>
                         </motion.div>
                     </motion.div>
-                    <motion.img animate={{ y: -570 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="absolute top-[570px] left-[35px]   " src={woman} alt="" />
+                    <motion.img initial={{ opacity: 0 }} animate={{ y: -570, opacity: 1 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="absolute top-[570px] left-[35px]   " src={woman} alt="" />
 
                 </div>
 
@@ -75,7 +81,7 @@ export default function homepage() {
             <div className=" h-[60vh] w-full flex justify-between items-center">
                 <div className="w-1/2" >
 
-                    <h1 className=" text-center text-4xl text-[#ac3ab6] font-bold">{allData.whyWeAre[0].title}</h1>
+                    <h1 className=" text-center text-6xl text-[#ac3ab6] font-bold">{allData.whyWeAre[0].title}</h1>
                 </div>
                 
                 <div className=" w-1/2 p-4 flex items-center  " >
@@ -85,9 +91,16 @@ export default function homepage() {
                 </div>
             
             </div>
-            <div className="p-4">
+            <div>
 
-                <Achivement/>
+            <h2 className="text-center text-5xl font-light text-slate-600 p-5">Meet Our Students <span className="text-[#ac3ab6] font-bold">and Alumni</span> </h2>
+            <div className="p-4 mt-5 flex justify-around">
+                { allData.Stud_Achivements.map((item)=><Achivement name={item.StudentName} position={item.Position} img={item.img} key={item.key} />)
+
+}
+
+                
+</div>
             </div>
 
         </>
