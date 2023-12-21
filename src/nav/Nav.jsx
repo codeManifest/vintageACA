@@ -11,9 +11,9 @@ export default function Nav() {
     
     return(
         <>
-<header className="w-full h-[10vh] flex justify-between items-center font-light">
+<header className=" h-[10vh] w-[100vw] z-20 bg-white  flex justify-around items-center font-light fixed ">
     <div className="logo">Vintage Academy</div>
-    <nav className="">
+    <nav className="max-sm:hidden ">
     {allData.Menulist.map((item) => (
                       <NavLink to={item.to} className={"mx-4 "}>
                         {item.menu}
@@ -23,8 +23,8 @@ export default function Nav() {
                     ))}
                     
 
-    </nav>
         <Button Btn="SignUp"/>
+    </nav>
 
 </header>
 

@@ -81,12 +81,12 @@ const Stud_Achivements = [
 ];
 
 const Services=[
-  {key:"1", icons: <FaBookOpenReader size={50}  stroke="20" color="#C930BE" />, title:"Skilled Lectures",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
-  {key:"2", icons:<ImTrophy size={50}  stroke="20" color="#C930BE" />, title:"Scholership",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
-  {key:"3", icons:<GiOpenBook size={50}  stroke="20" color="#C930BE" />, title:"Book Library",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
-  {key:"4", icons:<IoVideocam size={50}  stroke="20" color="#C930BE" />, title:"Online Classes",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
-  {key:"5", icons:<RiTodoLine size={50}  stroke="20" color="#C930BE" />, title:"Home Projects",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
-  {key:"6", icons:<MdOutlineSupportAgent size={50}  stroke="20" color="#C930BE" />, title:"24 x 7",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"1", icons: <FaBookOpenReader size={20}  stroke="20" color="#C930BE" />, title:"Skilled Lectures",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"2", icons:<ImTrophy size={20}  stroke="20" color="#C930BE" />, title:"Scholership",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"3", icons:<GiOpenBook size={20}  stroke="20" color="#C930BE" />, title:"Book Library",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"4", icons:<IoVideocam size={20}  stroke="20" color="#C930BE" />, title:"Online Classes",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"5", icons:<RiTodoLine size={20}  stroke="20" color="#C930BE" />, title:"Home Projects",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"6", icons:<MdOutlineSupportAgent size={20}  stroke="20" color="#C930BE" />, title:"24 x 7",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
 
 ]
 

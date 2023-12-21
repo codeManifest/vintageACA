@@ -11,6 +11,8 @@ import CountUp from 'react-countup';
 
 import ServicesCard from "../component/ServicesCard"
 import Services from "../component/Services"
+// import svg 
+import Mysvg from '../img/Animation.gif'
 
 
 export default function homepage() {
@@ -22,13 +24,13 @@ export default function homepage() {
         <>
 
 
-            <div className="w-full h-[100vh] flex items-center overflow-hidden">
-                <div className="w-1/2 font-bold " >
+            <div className="w-full max-sm:h-screen  flex items-center overflow-hidden  pt-[10vh] max-sm:block   ">
+                <div className="w-1/2 py-10 font-bold max-sm:w-full " >
                     <h1 className="text-6xl text-[#FFA800]">Mastering Computers </h1>
-                    <h3 className="my-5 text-3xl w-2/3">Transforming Students <br />for <span className="text-[#FFA800]">Future Success.</span></h3>
+                    <h3 className="my-5 text-3xl w-2/3 max-sm:w-full max-sm">Transforming Students <br />for <span className="text-[#FFA800]">Future Success.</span></h3>
                     <p className="font-light text-sm w-2/3">Craft your success journey with <span className="font-bold">Vintage IT Academy's</span>  flexible career courses—online, offline, and hybrid</p>
                     {/* ---> */}
-                    <div className="mt-8 mb-6 w-[20rem] flex items-center justify-between">
+                    <div className="mt-15 max-sm:pt-10  mb-20 w-[20rem] flex items-center justify-between">
 
                         <Button Btn="Contact" />
                         <div className=" ">
@@ -42,22 +44,27 @@ export default function homepage() {
 
                     </div>
                 </div>
-                <div className="w-1/2 relative   " >
+                <div className="w-1/2 relative max-sm:w-full  " >
+                    <div className="md:hidden w-full flex justify-center" >
+                        <img src={Mysvg} className=" scale-[2.0] "  alt=""  />
+                    </div>
+                    <div className="max-sm:hidden">
 
                     <motion.div initial={{ opacity: 0 }}   animate={{ scale: 1.1, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .12 }} className="h-[584px] w-[584px] bg-[#FAD9F8]  rounded-[50%] flex items-center justify-center">
 
                         <motion.div initial={{ opacity: 0 }} animate={{ scale: .8, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[490px] w-[490px] bg-[#F9A7F3]  rounded-[50%] flex items-center justify-center">
 
-                            <motion.div initial={{ opacity: 0 }} animate={{ scale: .6, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[372px] w-[372px] bg-[#EE64E4]  rounded-[50%]  "></motion.div>
+                            <motion.div initial={{ opacity: 0 }} animate={{ scale: .6, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[372px]  w-[372px] bg-[#EE64E4]  rounded-[50%]  "></motion.div>
                         </motion.div>
                     </motion.div>
-                    <motion.img initial={{ opacity: 0 }} animate={{ y: -570, opacity: 1 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="absolute top-[570px] left-[35px]   " src={woman} alt="" />
+                    <motion.img initial={{ opacity: 0 }} animate={{ y: -570, opacity: 1 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="scale-75 absolute top-[570px] left-[35px]   " src={woman} alt="" />
 
+                </div>
                 </div>
 
             </div>
-            <div className=" h-fit w-full" >
-                <h2 className="w-1/2 text-4xl font-semibold ">Browse Top Essential Career Courses</h2>
+            <div className=" w-full" >
+                <h2 className="w-1/2 max-sm:w-full text-4xl font-semibold ">Browse Top Essential Career Courses</h2>
                 <div className="flex justify-between items-center w-full mt-5  flex-wrap ">
                     {allData.SmallCardData.map((item) => (
                         <SmallCard icon={item.icon} title={item.title} />
@@ -81,21 +88,21 @@ export default function homepage() {
                 </div>
 
             </div>
-            <div className=" h-screen w-full flex justify-around items-center  flex-wrap">
+            <div className="w-full flex justify-around items-center py-20 ">
                 {/* student achievment card was here */}
                         <Services/>
             
             </div>
-            <div className="py-2" >
+            <div className="py-10 max-sm:block " >
 
             <h2 className="text-center text-5xl font-light text-slate-600 p-5">Meet Our Students <span className="text-[#ac3ab6] font-bold">and Alumni</span> </h2>
-            <div className="p-4 mt-5 flex justify-around">
+            <div className="p-4 mt-7 flex justify-around w-full flex-wrap">
                 { allData.Stud_Achivements.map((item)=><Achivement name={item.StudentName} position={item.Position} img={item.img} key={item.key} />)}
             </div>
-            <div className=" w-full ">
+            
 
-    <Button Btn="Explore More"/>
-            </div>
+    
+            
             
 
            
