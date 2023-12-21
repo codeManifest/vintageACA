@@ -8,6 +8,19 @@ import stud1 from './img/stud (1).jpg'
 import stud2 from './img/stud (2).jpg'
 import stud3 from './img/stud (3).jpg'
 
+// icons for services
+import { FaBookOpenReader } from "react-icons/fa6";
+import { ImTrophy } from "react-icons/im";
+import { GiOpenBook } from "react-icons/gi";
+import { IoVideocam } from "react-icons/io5";
+import { RiTodoLine } from "react-icons/ri";
+import { MdOutlineSupportAgent } from "react-icons/md";
+
+
+
+
+
+
 
 const Menulist = [
   {key: 1, menu: "Home", to: "/", path: <Homepage /> },
@@ -67,10 +80,23 @@ const Stud_Achivements = [
   },
 ];
 
+const Services=[
+  {key:"1", icons: <FaBookOpenReader size={50}  stroke="20" color="#C930BE" />, title:"Skilled Lectures",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"2", icons:<ImTrophy size={50}  stroke="20" color="#C930BE" />, title:"Scholership",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"3", icons:<GiOpenBook size={50}  stroke="20" color="#C930BE" />, title:"Book Library",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"4", icons:<IoVideocam size={50}  stroke="20" color="#C930BE" />, title:"Online Classes",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"5", icons:<RiTodoLine size={50}  stroke="20" color="#C930BE" />, title:"Home Projects",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+  {key:"6", icons:<MdOutlineSupportAgent size={50}  stroke="20" color="#C930BE" />, title:"24 x 7",desc:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic."},
+
+]
+
+
+
 const allData = {
   Menulist,
   SmallCardData,
   whyWeAre,
-  Stud_Achivements
+  Stud_Achivements,
+  Services
 };
 export default allData;

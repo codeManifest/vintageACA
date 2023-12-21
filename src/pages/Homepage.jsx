@@ -9,6 +9,9 @@ import '../component/Additional-CSS.css'
 import Achivement from "../component/Achivement"
 import CountUp from 'react-countup';
 
+import ServicesCard from "../component/ServicesCard"
+import Services from "../component/Services"
+
 
 export default function homepage() {
     
@@ -78,33 +81,27 @@ export default function homepage() {
                 </div>
 
             </div>
-            <div className=" h-[60vh] w-full flex justify-between items-center">
-                <div className="w-1/2" >
-
-                    <h1 className=" text-center text-6xl text-[#ac3ab6] font-bold">{allData.whyWeAre[0].title}</h1>
-                </div>
-                
-                <div className=" w-1/2 p-4 flex items-center  " >
-                    <p  className="text-slate-700 shadow-lg bg-slate-50 p-5 rounded-lg ">
-                    {allData.whyWeAre[0].desc}
-                    </p>
-                </div>
+            <div className=" h-screen w-full flex justify-around items-center  flex-wrap">
+                {/* student achievment card was here */}
+                        <Services/>
             
             </div>
-            <div>
+            <div className="py-2" >
 
             <h2 className="text-center text-5xl font-light text-slate-600 p-5">Meet Our Students <span className="text-[#ac3ab6] font-bold">and Alumni</span> </h2>
             <div className="p-4 mt-5 flex justify-around">
-                { allData.Stud_Achivements.map((item)=><Achivement name={item.StudentName} position={item.Position} img={item.img} key={item.key} />)
+                { allData.Stud_Achivements.map((item)=><Achivement name={item.StudentName} position={item.Position} img={item.img} key={item.key} />)}
+            </div>
+            <div className=" w-full ">
 
-}
+    <Button Btn="Explore More"/>
+            </div>
+            
 
-                
-</div>
+           
             </div>
 
         </>
 
     )
-
 }
