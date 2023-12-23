@@ -12,7 +12,7 @@ export default function Services() {
                 <h5 className="text-[#C930BE] font-semibold">Services</h5>
                 <h1 className="text-6xl font-bold ">what we <br /> Provide to you</h1>
                 <p className="leading-normal text-slate-400 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta deserunt cumque, nam eaque distinctio. Ducimus deserunt quaerat rem, saepe quos, sed a similique qui odit repellendus et magni sapiente?</p>
-                <Button Btn="View all Services" />
+                <Button Btn="View all Services" bg="#C930BE" />
 
 
             </div>

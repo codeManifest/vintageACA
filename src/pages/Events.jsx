@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
-import SignUp from './SignUp'
+import SignUp from './SignIn'
 
 export default class Events extends PureComponent {
   render() {
     return (
-      <SignUp/>
+      <div></div>
     )
   }
 }

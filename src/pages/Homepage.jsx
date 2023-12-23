@@ -1,4 +1,6 @@
 import React from "react"
+import { useState } from "react";
+
 
 import allData from "../DataArry"
 import Button from "../component/Button"
@@ -9,30 +11,32 @@ import '../component/Additional-CSS.css'
 import Achivement from "../component/Achivement"
 import CountUp from 'react-countup';
 
-import ServicesCard from "../component/ServicesCard"
+
 import Services from "../component/Services"
 // import svg 
 import Mysvg from '../img/Animation.gif'
+
 
 
 export default function homepage() {
     
     
     
-
+    
     return (
         <>
+      
 
 
-            <div className="w-full max-sm:h-screen  flex items-center overflow-hidden  pt-[10vh] max-sm:block   ">
+            <div className="w-full max-sm:h-screen  flex items-center overflow-hidden  pt-[10vh] max-sm:block  ">
                 <div className="w-1/2 py-10 font-bold max-sm:w-full " >
                     <h1 className="text-6xl text-[#FFA800]">Mastering Computers </h1>
                     <h3 className="my-5 text-3xl w-2/3 max-sm:w-full max-sm">Transforming Students <br />for <span className="text-[#FFA800]">Future Success.</span></h3>
-                    <p className="font-light text-sm w-2/3">Craft your success journey with <span className="font-bold">Vintage IT Academy's</span>  flexible career courses—online, offline, and hybrid</p>
+                    <p className="font-light text-sm w-2/3">Craft your success journey with <span className="font-bold">Vintage IT Academy's</span> flexible career courses—online, offline, and hybrid</p>
                     {/* ---> */}
                     <div className="mt-15 max-sm:pt-10  mb-20 w-[20rem] flex items-center justify-between">
 
-                        <Button Btn="Contact" />
+                        <Button Btn="Contact" bg="#C930BE" />
                         <div className=" ">
                             <h1 className="text-4xl text-[#454545] "> <CountUp start={0} end={50} duration={2} delay={1}/>+</h1>
                             <p className="font-light">Courses</p>
@@ -45,10 +49,10 @@ export default function homepage() {
                     </div>
                 </div>
                 <div className="w-1/2 relative max-sm:w-full  " >
-                    <div className="md:hidden w-full flex justify-center" >
+                    <div className="md:hidden w-full flex " >
                         <img src={Mysvg} className=" scale-[2.0] "  alt=""  />
                     </div>
-                    <div className="max-sm:hidden">
+                    <div className="max-sm:hidden xl:px-[10rem] ">
 
                     <motion.div initial={{ opacity: 0 }}   animate={{ scale: 1.1, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .12 }} className="h-[584px] w-[584px] bg-[#FAD9F8]  rounded-[50%] flex items-center justify-center">
 
@@ -57,7 +61,7 @@ export default function homepage() {
                             <motion.div initial={{ opacity: 0 }} animate={{ scale: .6, opacity: 1 }} transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 5, type: "bounce", stiffness: .25 }} className="h-[372px]  w-[372px] bg-[#EE64E4]  rounded-[50%]  "></motion.div>
                         </motion.div>
                     </motion.div>
-                    <motion.img initial={{ opacity: 0 }} animate={{ y: -570, opacity: 1 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="scale-75 absolute top-[570px] left-[35px]   " src={woman} alt="" />
+                    <motion.img initial={{ opacity: 0 }} animate={{ y: -570, opacity: 1 }} transition={{ delay:1, duration: 3, type: "spring" }} width={500} className="scale-75 absolute top-[570px] left-[200px]   " src={woman} alt="" />
 
                 </div>
                 </div>

@@ -26,6 +26,7 @@ function App() {
         <Routes>
         {allData.Menulist.map((item) =>(
           <Route  path={item.to} element={item.path} />
+         
           ))}
           
           
