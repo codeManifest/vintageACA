@@ -10,6 +10,7 @@ import allData from './DataArry'
 
 import './App.css'
 import Homepage from './pages/Homepage'
+import Footer from './component/Footer'
 
 
 
@@ -40,7 +41,7 @@ function App() {
 
 
 
-
+<Footer/>
     </>
   )
 }

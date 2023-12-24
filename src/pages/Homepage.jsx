@@ -20,6 +20,7 @@ import Mysvg from '../img/Animation.gif'
 
 export default function homepage() {
     
+    let small_card_data_split=allData.SmallCardData.slice(0,3)
     
     
     
@@ -32,7 +33,7 @@ export default function homepage() {
                 <div className="w-1/2 py-10 font-bold max-sm:w-full " >
                     <h1 className="text-6xl text-[#FFA800]">Mastering Computers </h1>
                     <h3 className="my-5 text-3xl w-2/3 max-sm:w-full max-sm">Transforming Students <br />for <span className="text-[#FFA800]">Future Success.</span></h3>
-                    <p className="font-light text-sm w-2/3">Craft your success journey with <span className="font-bold">Vintage IT Academy's</span> flexible career courses—online, offline, and hybrid</p>
+                    <p className="font-light text-sm w-2/3">Craft your success journey with <span className="font-bold">Alan Academy</span> flexible career courses—online, offline, and hybrid</p>
                     {/* ---> */}
                     <div className="mt-15 max-sm:pt-10  mb-20 w-[20rem] flex items-center justify-between">
 
@@ -70,7 +71,7 @@ export default function homepage() {
             <div className=" w-full" >
                 <h2 className="w-1/2 max-sm:w-full text-4xl font-semibold ">Browse Top Essential Career Courses</h2>
                 <div className="flex justify-between items-center w-full mt-5  flex-wrap ">
-                    {allData.SmallCardData.map((item) => (
+                    {small_card_data_split.map((item) => (
                         <SmallCard icon={item.icon} title={item.title} />
                     ))}
                     {/* arrow SVG */}

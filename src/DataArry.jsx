@@ -1,5 +1,6 @@
 import Homepage from "./pages/Homepage";
 import Events from "./pages/Events";
+import Courses from "./pages/Courses";
 // icons import
 import { HiOutlineComputerDesktop } from "react-icons/hi2"; //use in small card (Desktop icon)
 import { HiChartBar } from "react-icons/hi"; //use in small card (Chart icon)
@@ -25,7 +26,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 const Menulist = [
   {key: 1, menu: "Home", to: "/", path: <Homepage /> },
   {key: 2, menu: "About", to: "/about", path: "<About/> " },
-  {key: 3, menu: "Courses", to: "/courses", path: "<Courses/>" },
+  {key: 3, menu: "Courses", to: "/courses", path: <Courses/> },
   {key: 4,menu: "Events", to: "/Events", path: <Events /> },
 ];
 
@@ -41,6 +42,54 @@ const SmallCardData = [
     icon: <HiChartBar size={50} color="white" />,
     title: "Accounting & Tally",
     bg: "#EE64E4",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
+  },
+  {
+    key:3,
+    icon: <MdDesignServices size={50} color="white" />,
+    title: "Design & Marketing",
+    bg: "#EEAF32",
   },
   {
     key:3,

@@ -23,7 +23,7 @@ export default function Nav() {
     return(
         <>
 <header className=" h-[10vh] w-[100vw] z-20 bg-white  flex justify-around items-center font-light fixed left-0">
-    <div className="logo font-bold text-xl text-[#C930BE] ">Evo Design <span className="font-normal text-black ">Labs</span> </div>
+    <div className="logo font-bold text-xl text-[#C930BE] ">Alen <span className="font-normal text-black ">Academy</span> </div>
     <nav className="max-sm:hidden ">
     {allData.Menulist.map((item) => (
                       <NavLink  to={item.to} className={"mx-4"}>
